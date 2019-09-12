@@ -12,15 +12,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <EmbeddedResource Include="wwwroot\**\*.*" />
-    <EmbeddedResource Include="Pages\**\*.cshtml" />
-    <EmbeddedResource Include="Localization\Resources\AbpTenantManagement\Web\*.json" />
+    <EmbeddedResource Include="Pages\**\*.*" Exclude="*.cs" />
   </ItemGroup>
 
   <ItemGroup>
-    <Content Remove="wwwroot\**\*.*" />
     <Content Remove="Pages\**\*.cshtml" />
-    <Content Remove="Localization\Resources\**\*.json" />
+    <Content Remove="Pages\**\*.js" />
+    <Content Remove="Pages\**\*.css" />
     <Content Remove="compilerconfig.json" />
     <Content Remove="compilerconfig.json.defaults" />
     <Content Remove="Properties\launchSettings.json" />
